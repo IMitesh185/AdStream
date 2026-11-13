@@ -385,7 +385,7 @@ Capacity method [Proposed]: measure the rate per core or partition, then derive 
 |---|---|---|
 | 1 | Problem statement and requirements | Draft in sections 2 and 3 |
 | 2 | Invariants and failure modes | Draft in section 4 |
-| 3 | Data contracts (entities and events) | Open (Task 1B parked, see `Known_Issues.md`) |
+| 3 | Data contracts (entities and events) | Proposed logical v0.1 in [DataContracts.md](./DataContracts.md); owner review and S1 executable schemas pending |
 | 4 | Architecture map | v0 in section 5 |
 | 5 | Sequence diagrams for ingest, reserve budget, late event, reconcile and replay | Not started |
 | 6 | Storage design (Postgres ledger, Bronze/Silver/Gold, grain, partitioning) | Not started |
