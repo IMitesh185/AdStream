@@ -385,7 +385,7 @@ Capacity method [Proposed]: measure the rate per core or partition, then derive 
 |---|---|---|
 | 1 | Problem statement and requirements | Draft in sections 2 and 3 |
 | 2 | Invariants and failure modes | Draft in section 4 |
-| 3 | Data contracts (entities and events) | Proposed logical v0.1 in [DataContracts.md](./DataContracts.md); owner review and S1 executable schemas pending |
+| 3 | Data contracts (entities and events) | Proposed logical v0.1 in [DataContracts.md](./DataContracts.md); owner review pending. S1 pilot built for click, impression and conversion, the other 13 event types are pending |
 | 4 | Architecture map | v0 in section 5 |
 | 5 | Sequence diagrams for ingest, reserve budget, late event, reconcile and replay | Not started |
 | 6 | Storage design (Postgres ledger, Bronze/Silver/Gold, grain, partitioning) | Not started |
@@ -415,6 +415,7 @@ Proposed refinement: S2 is built twice. S2a runs in plain Python with in-memory 
 |---|---|---|
 | Python environment and pytest | built | Virtual environment kept outside OneDrive |
 | Metrics library: `compute_ctr` | built | Tests incomplete. CPC and CPM not started |
+| Contract validation (S1 pilot): `src/adstream/contracts` | built | Click, impression and conversion (3 of 16 event types), quarantine record and `validate_event`. Registry and serialization format (O-11) not started |
 | A to I, G1, G2, R (section 5.2) | designed | Nothing else exists yet |
 
 ## 12. Decision log
